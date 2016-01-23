@@ -222,8 +222,142 @@
             
               
                 
-                <a class="post-title-link" href="/2016/01/23/CIE-1931-x-y-Chromaticity-Diagram/" itemprop="url">
-                  CIE 1931(x,y) Chromaticity Diagram
+                <a class="post-title-link" href="/2016/01/23/Input-mathematical-formula-in-hexo/" itemprop="url">
+                  Input mathematical formula in hexo
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-01-23T21:27:22+08:00" content="2016-01-23">
+              2016-01-23
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/23/Input-mathematical-formula-in-hexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/23/Input-mathematical-formula-in-hexo/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Install Hexo-math plugins as following:</p>
+<pre><code>$ npm install hexo-math --save
+</code></pre><p>then, execute the following scripts in the hexo folder:</p>
+<pre><code>$ hexo math install
+</code></pre><p>Finally, in the _config.yml file of the system, add:</p>
+<pre><code>plugins:
+ - hexo-math
+</code></pre><p><strong>Instructions for use:</strong></p>
+<p>Insert the formula in a line: begin with “\$” and end with “\$”<br>Insert the formula independently: begin with “\$\$” and end with “\$\$”</p>
+<p><strong>Examples:</strong></p>
+<pre><code>\[J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}\]
+</code></pre><p>$$[J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}]$$</p>
+<p><strong>Superscripts and Subscripts</strong></p>
+<pre><code>\sideset{^12}{^34}\bigotimes
+</code></pre><p>$$\sideset{^12}{^34}\bigotimes$$</p>
+<p><strong>Brackets</strong></p>
+<pre><code>f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)
+</code></pre><p>$$f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)$$</p>
+<p><strong>Fraction</strong></p>
+<pre><code>\frac{1}{3} or 1 \over 3
+</code></pre><p>$$\frac{1}{3}$$</p>
+<p><strong>SQRT</strong></p>
+<pre><code>\sqrt{2} or \sqrt[n]{3}
+</code></pre><p>$$\sqrt[n]{3}$$</p>
+<p><strong>Dots or apostrophe</strong></p>
+<pre><code>\ldots or \cdots
+f(x1,x2,\ldots,xn) = x1^2 + x2^2 + \cdots + xn^2
+</code></pre><p>$$f(x1,x2,\ldots,xn) = x1^2 + x2^2 + \cdots + xn^2$$</p>
+<p><strong>Vectors</strong></p>
+<pre><code>\vec{a} \cdot \vec{b}=0
+</code></pre><p>$$\vec{a} \cdot \vec{b}=0$$</p>
+<p><strong>Integral</strong></p>
+<pre><code>\int_0^1 x^2 {\rm d}x
+</code></pre><p>$$\int_0^1 x^2 {\rm d}x$$</p>
+<p><strong>Limits</strong></p>
+<pre><code>\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}
+</code></pre><p>$$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$</p>
+<p><strong>Accumulation and multiplication</strong></p>
+<pre><code>\sum{i=0}^n \frac{1}{i^2} or \prod{i=0}^n \frac{1}{i^2}
+</code></pre><p>$$\sum{i=0}^n \frac{1}{i^2}$$ or $$\prod{i=0}^n \frac{1}{i^2}$$</p>
+<p><strong>symbol</strong></p>
+<pre><code>\alpha　A　\beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E \varepsilon　　\zeta　Z　\eta　H　\theta　\Theta　\vartheta \iota　I　\kappa　K　\lambda　\Lambda　\mu　M　\nu　N \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega
+</code></pre><p>$$\alpha　A　\beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E \varepsilon　　\zeta　Z　\eta　H　\theta　\Theta　\vartheta \iota　I　\kappa　K　\lambda　\Lambda$$  　<br>$$\mu　M　\nu　N \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega$$</p>
+<p>other special symbols please refer to the website: <a href="http://ttang.name/2014/05/04/markdown-and-mathjax/" target="_blank" rel="external">http://ttang.name/2014/05/04/markdown-and-mathjax/</a></p>
+
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/23/CIE-1931-x-y-chromaticity-coordinates/" itemprop="url">
+                  CIE 1931(x,y) chromaticity coordinates
                 </a>
               
             
@@ -247,8 +381,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/23/CIE-1931-x-y-Chromaticity-Diagram/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/23/CIE-1931-x-y-Chromaticity-Diagram/" itemprop="commentsCount"></span>
+                <a href="/2016/01/23/CIE-1931-x-y-chromaticity-coordinates/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/23/CIE-1931-x-y-chromaticity-coordinates/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -272,7 +406,16 @@
         
           
             <p>The chromaticity coordinates (x, y) can be calculated with spectrum and CIE 1931 xyz color matching functions.  </p>
-<p>$$ \int_0^\infty I(\lambda)\overline{x}(\lambda){\rm d}\lambda $$</p>
+<p><center>$X=\int_0^\infty I(\lambda)\overline{x}(\lambda){\rm d}\lambda$</center></p>
+<p><center>$Y=\int_0^\infty I(\lambda)\overline{y}(\lambda){\rm d}\lambda$</center></p>
+<p><center>$Z=\int_0^\infty I(\lambda)\overline{z}(\lambda){\rm d}\lambda$</center><br>where $I(\lambda)$ is the spectrum distribution. And (x, y)is:</p>
+<blockquote>
+<p>x = X/(X+Y+Z)<br>y = Y/(X+Y+Z)  </p>
+</blockquote>
+<p>There is another parameter “z”, which represents the lightness and can be given as:</p>
+<blockquote>
+<p>z = 1-x-y</p>
+</blockquote>
 
           
         
@@ -805,7 +948,7 @@ OR &quot;npm install -g cnpm --registry=https://registry.npm.taobao.org&quot;
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -819,7 +962,7 @@ OR &quot;npm install -g cnpm --registry=https://registry.npm.taobao.org&quot;
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
@@ -957,5 +1100,35 @@ OR &quot;npm install -g cnpm --registry=https://registry.npm.taobao.org&quot;
   
 
 
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>

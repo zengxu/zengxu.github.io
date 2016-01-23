@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Photometric tool," />
+  <meta name="keywords" content="Github pages,hexo," />
 
 
 
@@ -57,24 +57,28 @@
 
 
 
-<meta name="description" content="Photometry is the science of the measurement of light, in terms of its perceived brightness to the human eye.– Wikipedia: https://en.wikipedia.org/wiki/Photometry_(optics))  
-
-The most accurate and co">
+<meta name="description" content="Install Hexo-math plugins as following:
+$ npm install hexo-math --save
+then, execute the following scripts in the hexo folder:
+$ hexo math install
+Finally, in the _config.yml file of the system, add:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Photometry">
-<meta property="og:url" content="http://yoursite.com/2016/01/20/Photometry/index.html">
+<meta property="og:title" content="Input mathematical formula in hexo">
+<meta property="og:url" content="http://yoursite.com/2016/01/23/Input-mathematical-formula-in-hexo/index.html">
 <meta property="og:site_name" content="Xu's Notes">
-<meta property="og:description" content="Photometry is the science of the measurement of light, in terms of its perceived brightness to the human eye.– Wikipedia: https://en.wikipedia.org/wiki/Photometry_(optics))  
-
-The most accurate and co">
-<meta property="og:image" content="http://7xqes5.com1.z0.glb.clouddn.com/CIE1931_rgb.png">
-<meta property="og:image" content="http://7xqes5.com1.z0.glb.clouddn.com/CIE1931_xyz.png">
-<meta property="og:updated_time" content="2016-01-23T09:48:56.840Z">
+<meta property="og:description" content="Install Hexo-math plugins as following:
+$ npm install hexo-math --save
+then, execute the following scripts in the hexo folder:
+$ hexo math install
+Finally, in the _config.yml file of the system, add:">
+<meta property="og:updated_time" content="2016-01-23T14:03:59.212Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Photometry">
-<meta name="twitter:description" content="Photometry is the science of the measurement of light, in terms of its perceived brightness to the human eye.– Wikipedia: https://en.wikipedia.org/wiki/Photometry_(optics))  
-
-The most accurate and co">
+<meta name="twitter:title" content="Input mathematical formula in hexo">
+<meta name="twitter:description" content="Install Hexo-math plugins as following:
+$ npm install hexo-math --save
+then, execute the following scripts in the hexo folder:
+$ hexo math install
+Finally, in the _config.yml file of the system, add:">
 
 
 
@@ -92,7 +96,7 @@ The most accurate and co">
   };
 </script>
 
-  <title> Photometry | Xu's Notes </title>
+  <title> Input mathematical formula in hexo | Xu's Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -222,7 +226,7 @@ The most accurate and co">
             
             
               
-                Photometry
+                Input mathematical formula in hexo
               
             
           </h1>
@@ -234,8 +238,8 @@ The most accurate and co">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T20:53:07+08:00" content="2016-01-20">
-              2016-01-20
+            <time itemprop="dateCreated" datetime="2016-01-23T21:27:22+08:00" content="2016-01-23">
+              2016-01-23
             </time>
           </span>
 
@@ -245,8 +249,8 @@ The most accurate and co">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/20/Photometry/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/20/Photometry/" itemprop="commentsCount"></span>
+                <a href="/2016/01/23/Input-mathematical-formula-in-hexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/23/Input-mathematical-formula-in-hexo/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -267,10 +271,50 @@ The most accurate and co">
       
 
       
-        <blockquote>
-<p><strong>Photometry</strong> is the science of the measurement of light, in terms of its perceived brightness to the human eye.<br>– Wikipedia: <a href="https://en.wikipedia.org/wiki/Photometry_(optics" target="_blank" rel="external">https://en.wikipedia.org/wiki/Photometry_(optics)</a>)  </p>
-</blockquote>
-<p>The most accurate and comprehensive parameter, in my opinion, to describe the light property is spectrum. While in the practical applications, the spectrum information is not intuitive, thus the photometric parameters come out. As defined by Wikipedia, the photometry is in terms of the perceived brightness to the human eye, thus it represents the feeling of human to the light, which is more simple and intuitive.<br>　　The first parameters are “Tristimulus Value” defined by CIE in 1931. The value is to define the response of human eyes to three kinds of light on different wavelength. The color matching functions are denoted as r-bar, g-bar and b-bar, as shown in the figure below. Detailed data please refer to my github repo: <a href="https://github.com/zengxu/pyphotometrics" target="_blank" rel="external">https://github.com/zengxu/pyphotometrics</a><br><img src="http://7xqes5.com1.z0.glb.clouddn.com/CIE1931_rgb.png" alt=""><br>As some of the values are negative in CIE 1931 rgb system, then CIE proposed the revision of Tristimulus value – CIE 1931 xyz color matching functions at 2° observation angle, as shown in the figure below.<br><img src="http://7xqes5.com1.z0.glb.clouddn.com/CIE1931_xyz.png" alt=""></p>
+        <p>Install Hexo-math plugins as following:</p>
+<pre><code>$ npm install hexo-math --save
+</code></pre><p>then, execute the following scripts in the hexo folder:</p>
+<pre><code>$ hexo math install
+</code></pre><p>Finally, in the _config.yml file of the system, add:</p>
+<pre><code>plugins:
+ - hexo-math
+</code></pre><p><strong>Instructions for use:</strong></p>
+<p>Insert the formula in a line: begin with “\$” and end with “\$”<br>Insert the formula independently: begin with “\$\$” and end with “\$\$”</p>
+<p><strong>Examples:</strong></p>
+<pre><code>\[J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}\]
+</code></pre><p>$$[J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}]$$</p>
+<p><strong>Superscripts and Subscripts</strong></p>
+<pre><code>\sideset{^12}{^34}\bigotimes
+</code></pre><p>$$\sideset{^12}{^34}\bigotimes$$</p>
+<p><strong>Brackets</strong></p>
+<pre><code>f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)
+</code></pre><p>$$f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)$$</p>
+<p><strong>Fraction</strong></p>
+<pre><code>\frac{1}{3} or 1 \over 3
+</code></pre><p>$$\frac{1}{3}$$</p>
+<p><strong>SQRT</strong></p>
+<pre><code>\sqrt{2} or \sqrt[n]{3}
+</code></pre><p>$$\sqrt[n]{3}$$</p>
+<p><strong>Dots or apostrophe</strong></p>
+<pre><code>\ldots or \cdots
+f(x1,x2,\ldots,xn) = x1^2 + x2^2 + \cdots + xn^2
+</code></pre><p>$$f(x1,x2,\ldots,xn) = x1^2 + x2^2 + \cdots + xn^2$$</p>
+<p><strong>Vectors</strong></p>
+<pre><code>\vec{a} \cdot \vec{b}=0
+</code></pre><p>$$\vec{a} \cdot \vec{b}=0$$</p>
+<p><strong>Integral</strong></p>
+<pre><code>\int_0^1 x^2 {\rm d}x
+</code></pre><p>$$\int_0^1 x^2 {\rm d}x$$</p>
+<p><strong>Limits</strong></p>
+<pre><code>\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}
+</code></pre><p>$$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$</p>
+<p><strong>Accumulation and multiplication</strong></p>
+<pre><code>\sum{i=0}^n \frac{1}{i^2} or \prod{i=0}^n \frac{1}{i^2}
+</code></pre><p>$$\sum{i=0}^n \frac{1}{i^2}$$ or $$\prod{i=0}^n \frac{1}{i^2}$$</p>
+<p><strong>symbol</strong></p>
+<pre><code>\alpha　A　\beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E \varepsilon　　\zeta　Z　\eta　H　\theta　\Theta　\vartheta \iota　I　\kappa　K　\lambda　\Lambda　\mu　M　\nu　N \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega
+</code></pre><p>$$\alpha　A　\beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E \varepsilon　　\zeta　Z　\eta　H　\theta　\Theta　\vartheta \iota　I　\kappa　K　\lambda　\Lambda$$  　<br>$$\mu　M　\nu　N \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega$$</p>
+<p>other special symbols please refer to the website: <a href="http://ttang.name/2014/05/04/markdown-and-mathjax/" target="_blank" rel="external">http://ttang.name/2014/05/04/markdown-and-mathjax/</a></p>
 
       
     </div>
@@ -279,7 +323,9 @@ The most accurate and co">
       
         <div class="post-tags">
           
-            <a href="/tags/Photometric-tool/" rel="tag">#Photometric tool</a>
+            <a href="/tags/Github-pages/" rel="tag">#Github pages</a>
+          
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
           
         </div>
       
@@ -288,17 +334,13 @@ The most accurate and co">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/20/Photometirc-tool-by-Python/" rel="next" title="Photometirc tool by Python">
-                <i class="fa fa-chevron-left"></i> Photometirc tool by Python
+              <a href="/2016/01/23/CIE-1931-x-y-chromaticity-coordinates/" rel="next" title="CIE 1931(x,y) chromaticity coordinates">
+                <i class="fa fa-chevron-left"></i> CIE 1931(x,y) chromaticity coordinates
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/23/CIE-1931-x-y-chromaticity-coordinates/" rel="prev" title="CIE 1931(x,y) chromaticity coordinates">
-                CIE 1931(x,y) chromaticity coordinates <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -324,8 +366,8 @@ The most accurate and co">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/20/Photometry/"
-           data-title="Photometry" data-url="http://yoursite.com/2016/01/20/Photometry/">
+      <div class="ds-thread" data-thread-key="2016/01/23/Input-mathematical-formula-in-hexo/"
+           data-title="Input mathematical formula in hexo" data-url="http://yoursite.com/2016/01/23/Input-mathematical-formula-in-hexo/">
       </div>
     
   </div>
